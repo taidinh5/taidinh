@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tai Dinh | Data Analyst Portfolio</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Starry Background -->
+  <div class="starry-background">
+    <div class="stars"></div>
+  </div>
+  
+  <!-- Custom Rocket Scrollbar -->
+  <div class="custom-scrollbar">
+    <div class="rocket-scrollbar" id="rocket-scrollbar"></div>
+  </div>
+  
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <!-- Logo -->
+      <div class="logo">
+        <span class="logo-text">Tai</span><span class="logo-dot"></span>
+      </div>
+      
+      <!-- Navigation -->
+      <nav class="sidebar-nav">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active"><i class="nav-icon">🏠</i>Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="nav-icon">👤</i>About Me</a></li>
+          <li><a href="#resume" class="nav-link"><i class="nav-icon">📄</i>Resume</a></li>
+          <li><a href="#projects" class="nav-link"><i class="nav-icon">💼</i>Projects</a></li>
+          <li><a href="#more-about" class="nav-link"><i class="nav-icon">🌟</i>More About Me</a></li>
+          <li><a href="#contact" class="nav-link"><i class="nav-icon">📧</i>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Mode Toggle Button -->
+          <div class="theme-toggle-container">
+        <div class="theme-toggle-switch">
+          <span class="theme-label dark-label">Light</span>
+          <button class="mode-toggle" id="mode-toggle">
+            <div class="toggle-slider">
+              <img src="img/moon.png" alt="Moon" class="theme-icon" id="moon-icon">
+              <img src="img/sun.png" alt="Sun" class="theme-icon" id="sun-icon" style="display: none;">
+            </div>
+          </button>
+          <span class="theme-label light-label">Dark</span>
+        </div>
+      </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <!-- Space Objects -->
+      <div class="space-object star-1">⭐</div>
+      <div class="space-object star-2">✨</div>
+      <div class="space-object star-3">🌟</div>
+      <div class="space-object planet-1">🪐</div>
+      <div class="space-object planet-2">🌍</div>
+      <div class="space-object comet">☄️</div>
+      <div class="space-object rocket">🚀</div>
+      <div class="space-object satelite">🛰️</div>
+
+
+      
+      <div class="hero-content">
+        <img src="img/pfp.png" alt="Tai Dinh" class="profile-pic">
+        <h1>Hi, I'm <span>Tai Dinh</span></h1>
+        <div class="typing-container">
+          <span class="typing-text" id="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <div class="buttons">
+          <a href="pdf/Resume - Tai Dinh.pdf" class="btn" download>Download Resume</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/taidinh5/" target="_blank" class="icon linkedin">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/taidinh5" target="_blank" class="icon github">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <div class="email-container">
+            <a href="#" class="icon email" id="email-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/>
+              </svg>
+            </a>
+            
+            <!-- Email Popup -->
+            <div class="email-popup" id="email-popup">
+              <div class="popup-content">
+                <span class="email-text">taidinh5@outlook.com</span>
+                <button class="copy-btn" id="copy-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down">
+        <span class="scroll-text">Scroll Down</span>
+        <div class="scroll-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="profile-section">
+          <div class="profile-picture">
+            <img src="img/pfp.PNG" alt="Tai Dinh Profile Picture">
+          </div>
+          <div class="bio-section">
+            <div class="bio-text">
+              Hello, my name is Tai ('tie') Dinh! Throughout my undergrad studies, I explored many areas of study, initially thinking I would pursue a non-data career. Over time, however, I discovered a deeper passion for data, enjoying the detective work of uncovering patterns and revealing the story hidden within the numbers, a pursuit far more fulfilling than the path I initially imagined. Naturally curious and observant, I love continuously learning new things and expanding my skill set. I believe that storytelling and data are among the most powerful forces for meaningful change.
+            </div>
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-content">
+            <div class="info-item">
+              <img src="img/map.png" alt="Location" class="info-icon">
+              <span class="info-text">Rockland, New York</span>
+            </div>
+            <div class="info-item">
+              <img src="img/clock.png" alt="Time" class="info-icon">
+              <span class="info-text" id="current-time">Loading...</span>
+            </div>
+            <div class="info-item">
+              <img src="img/language.png" alt="Language" class="info-icon">
+              <span class="info-text">English</span>
+            </div>
+            <a href="pdf/Resume - Tai Dinh.pdf" class="info-item download-cv" download>
+              <img src="img/cv.png" alt="Download Resume" class="info-icon">
+              <span class="info-text">Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="resume-content">
+        <div class="education-section">
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4>Bachelor of Science in Business Administration</h4>
+                  <span class="institution">University at Buffalo</span>
+                </div>
+                <div class="timeline-period">2021-2025</div>
+                <div class="timeline-details">
+                  <span class="grade">Grade: 3.75/4.00</span>
+                  <span class="honors">Summa Cum Laude</span>
+                  <span class="concentrations">Concentrations: Management Information Systems & Financial Analysis</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4>High School Diploma</h4>
+                  <span class="institution">North Rockland High School</span>
+                </div>
+                <div class="timeline-period">2017-2021</div>
+                <div class="timeline-details">
+                  <span class="grade">Grade: 4.0/4.0</span>
+                  <span class="honors">Top 5% of Graduating Class</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tech Stack Section -->
+          <div class="skills-section">
+            <h3>Tech Stack</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Computer Languages</h4>
+                <div class="skill-tags">
+                  <div class="skill-item">
+                    <img src="img/sql.png" alt="SQL" class="skill-logo">
+                    <span class="skill-name">SQL</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/r.png" alt="R" class="skill-logo">
+                    <span class="skill-name">R</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/python.png" alt="Python" class="skill-logo">
+                    <span class="skill-name">Python</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Libraries</h4>
+                <div class="skill-tags">
+                  <div class="skill-item">
+                    <img src="img/tidyverse.png" alt="Tidyverse" class="skill-logo">
+                    <span class="skill-name">Tidyverse</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/datatable.png" alt="Data.table" class="skill-logo">
+                    <span class="skill-name">Data.table</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/pandas.png" alt="Pandas" class="skill-logo">
+                    <span class="skill-name">Pandas</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/numpy.png" alt="NumPy" class="skill-logo">
+                    <span class="skill-name">NumPy</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/matplotlib.png" alt="Matplotlib" class="skill-logo">
+                    <span class="skill-name">Matplotlib</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/seaborn.png" alt="Seaborn" class="skill-logo">
+                    <span class="skill-name">Seaborn</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Spreadsheets/Analytic Tools</h4>
+                <div class="skill-tags">
+                  <div class="skill-item">
+                    <img src="img/excel.png" alt="Microsoft Excel" class="skill-logo">
+                    <span class="skill-name">Microsoft Excel</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/excel.png" alt="Power Query" class="skill-logo">
+                    <span class="skill-name">Power Query</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/sheets.png" alt="Google Sheets" class="skill-logo">
+                    <span class="skill-name">Google Sheets</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/tableau.png" alt="Tableau" class="skill-logo">
+                    <span class="skill-name">Tableau</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/powerbi.png" alt="Microsoft Power BI" class="skill-logo">
+                    <span class="skill-name">Microsoft Power BI</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Data Warehouses</h4>
+                <div class="skill-item">
+                  <img src="img/bigquery.png" alt="Google BigQuery" class="skill-logo">
+                  <span class="skill-name">Google BigQuery</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Creative Softwares</h4>
+                <div class="skill-tags">
+                  <div class="skill-item">
+                    <img src="img/powerpoint.png" alt="Microsoft PowerPoint" class="skill-logo">
+                    <span class="skill-name">Microsoft PowerPoint</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/slides.png" alt="Google Slides" class="skill-logo">
+                    <span class="skill-name">Google Slides</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="img/canva.png" alt="Canva" class="skill-logo">
+                    <span class="skill-name">Canva</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certifications Section -->
+            <div class="certifications-section">
+              <h3>Certifications</h3>
+              <div class="certifications-grid">
+                <div class="certification-item">
+                  <div class="certification-header">
+                    <h4>Google Data Analytics</h4>
+                    <span class="certification-institution">Coursera | Online</span>
+                    <span class="certification-date">July 2025</span>
+                  </div>
+                  <div class="certification-details">
+                    <ul>
+                      <li>Applied data-driven decision-making processes through hands-on projects and case studies</li>
+                      <li>Developed dashboards and reports to communicate insights using real-world datasets and tools like Tableau and spreadsheets</li>
+                    </ul>
+                  </div>
+                  <button class="view-credential-btn" data-cert="googcert">View Credential</button>
+                </div>
+                
+                <div class="certification-item">
+                  <div class="certification-header">
+                    <h4>Certificate of Financial Studies</h4>
+                    <span class="certification-institution">NRHS Academy of Finance | Thiells, NY</span>
+                    <span class="certification-date">September 2019 - June 2021</span>
+                  </div>
+                  <div class="certification-details">
+                    <ul>
+                      <li>Collaborated with a Certified Financial Planner to gain practical exposure to investment strategy, retirement planning, and risk assessment through guided case evaluation</li>
+                      <li>Delivered a business proposal presentation in a competitive format to donors, earning up to $1,000 in scholarships</li>
+                      <li>Gained foundational understanding of economics, accounting, international business, and securities and insurance</li>
+                    </ul>
+                  </div>
+                  <button class="view-credential-btn" data-cert="aofcert">View Credential</button>
+                </div>
+                
+                <div class="certification-item">
+                  <div class="certification-header">
+                    <h4>Business Analysis & Process Management</h4>
+                    <span class="certification-institution">Coursera | Online</span>
+                    <span class="certification-date">February 2025</span>
+                  </div>
+                  <div class="certification-details">
+                    <ul>
+                      <li>Analyzed organizational workflows to identify inefficiencies and propose data-driven business solutions</li>
+                      <li>Evaluated real-world case scenarios from a process perspective, broke down key issues, and developed practical solutions</li>
+                    </ul>
+                  </div>
+                  <button class="view-credential-btn" data-cert="bacert">View Credential</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-content">
+        <!-- Project Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="analytics">Analytics</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Quantium Data Analytics Project -->
+          <div class="project-item" data-category="analytics">
+            <div class="project-icon">
+              <img src="img/snack.png" alt="Snack Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>QUANTIUM RETAIL ANALYTICS</h3>
+              <p>Developed a comprehensive retail analytics solution for customer segmentation and store trial performance evaluation. Used advanced statistical analysis to identify customer segments and assess the impact of new store layouts.</p>
+              <div class="project-tools">
+                <span class="tool-tag">End to End</span>
+                <span class="tool-tag">R</span>
+                <span class="tool-tag">Tidyverse</span>
+                <span class="tool-tag">Data.Table</span>
+                <span class="tool-tag">Statistical Analysis</span>
+                <span class="tool-tag">Customer Segmentation</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Quantium-Data-Analytics-Project" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cyclistic Data Analysis -->
+          <div class="project-item" data-category="analytics">
+            <div class="project-icon">
+              <img src="img/bicycle.png" alt="Bicycle Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>CYCLISTIC BIKE-SHARE ANALYSIS</h3>
+              <p>Conducted comprehensive analysis of bike-share data to understand rider behavior patterns and develop marketing strategies for converting casual riders to annual members. Applied complete data analysis process from Ask to Act.</p>
+              <div class="project-tools">
+                <span class="tool-tag">End to End</span>
+                <span class="tool-tag">SQL</span>
+                <span class="tool-tag">Power BI</span>
+                <span class="tool-tag">ETL</span>
+                <span class="tool-tag">Trend Analysis</span>
+                <span class="tool-tag">Business Intelligence</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Cyclistic_Data_Analysis_Case_Study" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bellabeat Data Analysis -->
+          <div class="project-item" data-category="analytics">
+            <div class="project-icon">
+              <img src="img/smart-watch.png" alt="Smart Watch Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>BELLABEAT WELLNESS DATA ANALYSIS</h3>
+              <p>Analyzed smart device fitness data to gain insights into how consumers use non-Bellabeat smart devices and identify opportunities for Bellabeat's marketing strategy in the global smart device market.</p>
+              <div class="project-tools">
+                <span class="tool-tag">End to End</span>
+                <span class="tool-tag">Python</span>
+                <span class="tool-tag">Pandas</span>
+                <span class="tool-tag">Matplotlib</span>
+                <span class="tool-tag">Seaborn</span>
+                <span class="tool-tag">ETL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Bellabeat-Data-Analysis-Case-Study" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- AMD Stock Analysis -->
+          <div class="project-item" data-category="analytics">
+            <div class="project-icon">
+              <img src="img/stock.png" alt="Stock Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>AMD STOCK ANALYSIS</h3>
+              <p>Conducted financial analysis of AMD stock performance from 2020 to 2025, focusing on technical indicators, and market trends to provide investment insights and portfolio recommendations.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Python</span>
+                <span class="tool-tag">Pandas</span>
+                <span class="tool-tag">Matplotlib</span>
+                <span class="tool-tag">yfinance</span>
+                <span class="tool-tag">Financial Analysis</span>
+                <span class="tool-tag">Data Visualization</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/AMD-Stock-Analysis" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buffalo Eco-Wise Marketing Plan -->
+          <div class="project-item" data-category="other">
+            <div class="project-icon">
+              <img src="img/eco.png" alt="Eco Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>BUFFALO ECO-WISE MARKETING PLAN</h3>
+              <p>Developed a comprehensive marketing plan for a hypothetical sustainability startup focused on the WasteWise electric kitchen composter. Created product strategy, target market analysis, and implementation roadmap for eco-friendly kitchen technology.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Marketing Strategy</span>
+                <span class="tool-tag">Business Planning</span>
+                <span class="tool-tag">Market Research</span>
+                <span class="tool-tag">Product Development</span>
+                <span class="tool-tag">Sustainability</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Buffalo-Eco-Wise-Marketing-Plan" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lifetime Fitness Database -->
+          <div class="project-item" data-category="other">
+            <div class="project-icon">
+              <img src="img/dumbbell.png" alt="Dumbbell Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>LIFETIME FITNESS DATABASE</h3>
+              <p>Designed and implemented a comprehensive database system for Lifetime Fitness to manage member information, class schedules, equipment tracking, and facility management with optimized data relationships.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Microsoft Access</span>
+                <span class="tool-tag">Database Design</span>
+                <span class="tool-tag">ERD</span>
+                <span class="tool-tag">Data Modeling</span>
+                <span class="tool-tag">Business Requirements</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Lifetime-Fitness-Database" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Financial Profitability & Credit Risk Analysis -->
+          <div class="project-item" data-category="analytics">
+            <div class="project-icon">
+              <img src="img/accounting.png" alt="Financial Analysis Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>FINANCIAL PROFITABILITY & CREDIT RISK ANALYSIS</h3>
+              <p>Conducted comprehensive financial analysis of Nike, Inc. and Under Armour, Inc. using SEC EDGAR Form 10-K data. Applied DuPont Model for profitability analysis and credit risk metrics including Altman Z-Score to provide investment recommendations.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Excel</span>
+                <span class="tool-tag">Financial Analysis</span>
+                <span class="tool-tag">DuPont Model</span>
+                <span class="tool-tag">Credit Risk Assessment</span>
+                <span class="tool-tag">Investment Analysis</span>
+                <span class="tool-tag">SEC EDGAR</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Financial-Profitability-Credit-Risk-Analysis" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deloitte Ad-Hoc Task -->
+          <div class="project-item" data-category="analytics">
+            <div class="project-icon">
+              <img src="img/factory.png" alt="Factory Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>DELOITTE AUSTRALIA AD-HOC TASK</h3>
+              <p>Completed data analysis tasks for Deloitte Australia, demonstrating proficiency in handling real-world business problems, data cleaning, analysis, and presenting actionable insights to stakeholders.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Excel</span>
+                <span class="tool-tag">Tableau</span>
+                <span class="tool-tag">Data Analysis</span>
+                <span class="tool-tag">Business Intelligence</span>
+                <span class="tool-tag">Stakeholder Communication</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Ad-Hoc-Task-Deloitte-Australia" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robot Kiosk System Design -->
+          <div class="project-item" data-category="other">
+            <div class="project-icon">
+              <img src="img/prodmgnt.png" alt="Project Management Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>ROBOT KIOSK SYSTEM DESIGN</h3>
+              <p>Designed and analyzed an autonomous kiosk robot system for retail environments featuring self-checkout, inventory management, and product lookup capabilities. Developed comprehensive project management documentation including system analysis, business requirements, and implementation strategy.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Project Management</span>
+                <span class="tool-tag">System Design</span>
+                <span class="tool-tag">Business Analysis</span>
+                <span class="tool-tag">Requirements Gathering</span>
+                <span class="tool-tag">Process Automation</span>
+                <span class="tool-tag">Retail Technology</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/taidinh5/Project-Management---Robot-Kiosk-System-Design-" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Collection Ethics Paper -->
+          <div class="project-item" data-category="other">
+            <div class="project-icon">
+              <img src="img/ethics.png" alt="Ethics Paper Icon" class="project-icon-img">
+            </div>
+            <div class="project-content">
+              <h3>DATA COLLECTION ETHICS PAPER</h3>
+              <p>Researched and wrote a comprehensive paper on ethical considerations in data collection practices. Explored privacy concerns, consent mechanisms, and responsible data handling principles in the digital age.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Ethics Research</span>
+                <span class="tool-tag">Data Privacy</span>
+                <span class="tool-tag">Academic Writing</span>
+                <span class="tool-tag">Policy Analysis</span>
+                <span class="tool-tag">Digital Ethics</span>
+              </div>
+              <div class="project-links">
+                <a href="pdf/Data Collection Ethics Paper.pdf" target="_blank" class="project-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  </svg>
+                  View PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More About Me Section -->
+    <section id="more-about" class="know-more">
+      <h2>More About Me</h2>
+      <div class="know-more-content">
+        <!-- Currently Reading Box -->
+        <div class="info-box reading-box">
+          <h3>Currently Reading</h3>
+          <div class="book-container">
+            <img src="img/book.png" alt="Book" class="book-image">
+          </div>
+        </div>
+
+                  <!-- My Persona Box -->
+          <div class="info-box persona-box">
+            <h3>My Persona</h3>
+            <div class="persona-messages">
+              <div class="message-bubble" style="transform: rotate(-5deg) translateX(-20px) translateY(10px);">
+                <span>Night-Owl</span>
+              </div>
+              <div class="message-bubble" style="transform: rotate(8deg) translateX(25px) translateY(-15px);">
+                <span>Tech Enthusiast</span>
+              </div>
+              <div class="message-bubble" style="transform: rotate(10deg) translateX(20px) translateY(15px);">
+                <span>Pop Culture Fan</span>
+              </div>
+              <div class="message-bubble" style="transform: rotate(15deg) translateX(30px) translateY(20px);">
+                <span>Gamer</span>
+              </div>
+              <div class="message-bubble" style="transform: rotate(-12deg) translateX(-15px) translateY(-25px);">
+                <span>INTJ</span>
+              </div>
+
+            </div>
+          </div>
+
+        <!-- Currently Watching Box -->
+        <div class="info-box watching-box">
+          <h3>Currently Watching</h3>
+          <div class="show-container">
+            <img src="img/show.png" alt="Show" class="show-image">
+          </div>
+        </div>
+
+        <!-- Favorite Songs Box -->
+        <div class="info-box songs-box">
+          <h3>Favorite Songs Right Now</h3>
+          <div class="music-player">
+            <div class="song-info">
+              <div class="current-song">Billie Eilish - BIRDS OF A FEATHER</div>
+              <div class="next-song">Up Next: The 1975 - Robbers</div>
+            </div>
+            <div class="player-controls">
+              <button class="control-btn skip-left">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6,6H8V18H6M18,6L9.5,12L18,18V6Z"/>
+                </svg>
+              </button>
+              <button class="control-btn play-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8,5.14V19.14L19,12.14L8,5.14Z"/>
+                </svg>
+              </button>
+              <button class="control-btn skip-right">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6,18L14.5,12L6,6V18M16,6V18H18V6H16Z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Favorite Food Place Box -->
+        <div class="info-box food-box">
+          <h3>Favorite Food Place</h3>
+          <div class="food-content">
+            <img src="img/bonchon.png" alt="Bonchon" class="food-image">
+            <div class="food-text">
+              Bonchon: Korean Fried Chicken
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-content">
+        <div class="contact-header">
+          <h3>Let's talk about everything!</h3>
+          <p>Don't like forms? Send me an <a href="mailto:taidinh5@outlook.com">email</a> or shoot me a text at <a href="tel:845-270-1650">845-270-1650</a> 👋</p>
+        </div>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input type="hidden" name="subject" value="Portfolio Contact Form" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="send-message-btn">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Credential Modal -->
+  <div id="credential-modal" class="credential-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="credential-image" src="" alt="Credential">
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
