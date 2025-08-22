@@ -1,5 +1,4 @@
 
-
 // Dark/Light Mode Toggle
 const toggleBtn = document.getElementById('mode-toggle');
 const body = document.body;
@@ -393,11 +392,16 @@ if (contactForm) {
       // Get form data
       const formData = new FormData(this);
       
-      // Submit to Netlify
-      const response = await fetch('/', {
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/xblkndrj', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-4-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.get('fullName'),
+          email: formData.get('email'),
+          subject: formData.get('subject'),
+          message: formData.get('message')
+        })
       });
       
       if (response.ok) {
