@@ -816,6 +816,19 @@
     padding: 2rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .certification-content {
+    flex: 1;
+  }
+
+  .certification-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
   }
 
   .certification-item:hover {
@@ -1613,10 +1626,9 @@
   }
 
   .know-more-content {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -1625,9 +1637,9 @@
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 2rem;
-    min-width: 300px;
-    max-width: 350px;
+    padding: 1.5rem;
+    min-width: 250px;
+    max-width: 300px;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -1654,13 +1666,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 120px;
     position: relative;
   }
 
   .book-image {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     filter: drop-shadow(0 0 20px rgba(24, 196, 242, 0.3));
     animation: floatUp 3s ease-in-out infinite;
@@ -1682,7 +1694,7 @@
 
   .persona-messages {
     position: relative;
-    height: 200px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1708,22 +1720,22 @@
   }
 
   .message-bubble:nth-child(1) {
-    top: 10%;
+    bottom: 80%;
     left: 5%;
   }
 
   .message-bubble:nth-child(2) {
-    top: 10%;
+    bottom: 60%;
     right: 10%;
   }
 
   .message-bubble:nth-child(3) {
-    top: 70%;
+    top: 55%;
     left: 0%;
   }
 
   .message-bubble:nth-child(4) {
-    top: 50%;
+    top: 40%;
     right: 10%;
   }
 
@@ -1741,12 +1753,12 @@
   /* Favorite Songs Box */
   .songs-box {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(24, 196, 242, 0.1) 100%);
-    min-width: 400px;
-    max-width: 500px;
+    min-width: 250px;
+    max-width: 300px;
   }
 
   .music-player {
-    height: 120px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1812,8 +1824,8 @@
   /* Favorite Food Place Box */
   .food-box {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(24, 196, 242, 0.1) 100%);
-    min-width: 400px;
-    max-width: 500px;
+    min-width: 250px;
+    max-width: 300px;
   }
 
   .food-content {
@@ -1839,17 +1851,47 @@
     filter: drop-shadow(0 0 10px rgba(24, 196, 242, 0.3));
   }
 
+  /* Current Addiction Box */
+  .addiction-box {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(24, 196, 242, 0.1) 100%);
+    min-width: 250px;
+    max-width: 300px;
+  }
+
+  .addiction-content {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .addiction-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .addiction-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(24, 196, 242, 0.3));
+  }
+
   .show-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 120px;
     position: relative;
   }
 
   .show-image {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     filter: drop-shadow(0 0 20px rgba(24, 196, 242, 0.3));
     animation: floatUp 3s ease-in-out infinite;
